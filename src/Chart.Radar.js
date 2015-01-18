@@ -52,6 +52,9 @@
 			//Number - amount extra to add to the radius to cater for hit detection outside the drawn point
 			pointHitDetectionRadius : 20,
 
+			// String - lLabel delimiter
+			pointLabelDelimiter: "\n",
+
 			//Boolean - Whether to show a stroke for datasets
 			datasetStroke : true,
 
@@ -185,6 +188,7 @@
 				pointLabelFontSize : this.options.pointLabelFontSize,
 				pointLabelFontFamily : this.options.pointLabelFontFamily,
 				pointLabelFontStyle : this.options.pointLabelFontStyle,
+				pointLabelDelimiter: this.options.pointLabelDelimiter,
 				height : this.chart.height,
 				width: this.chart.width,
 				xCenter: this.chart.width/2,

@@ -1959,7 +1959,10 @@
 							ctx.textBaseline = 'top';
 						}
 
-						ctx.fillText(this.labels[i], pointLabelPosition.x, pointLabelPosition.y);
+						var sepLabels = this.labels[i].split(this.pointLabelDelimiter);
+						for(var l=0;l<sepLabels.length;l++) {
+							ctx.fillText(sepLabels[l], pointLabelPosition.x, pointLabelPosition.y + (l*12));
+						}
 					}
 				}
 			}
